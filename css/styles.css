@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --border--radius: 5px;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+/*LOGIN*/
+.logo-img,
+.guayerd-img {
+    display: none;
+}
+
+.login-container {
+    height: calc(100vh - 64px);
+    background: url(../assets/Bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loginForm {
+    background-color: #fff;
+    width: 364px;
+    height: 301px;
+    border-radius: var(--border--radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginForm h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    width: 192px;
+    height: 37px;
+}
+
+.loginLabel {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+}
+
+.loginInput {
+    height: 38px;
+    width: 292px !important;
+    border-radius: var(--border--radius);
+}
+
+.login-container .btn {
+    background: #374785;
+    font-weight: 700;
+    width: 294px;
+    height: 38px;
+    border-radius: var(--border--radius);
+    border: 1px solid #24305e;
+}
+
+.loginFooter {
+    display: flex;
+    justify-content: end;
+    height: 64px;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.loginFooter img {
+    height: 29px;
+    width: 112px;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        background: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        height: 100vh;
+    }
+
+    .loginForm {
+        height: 248px;
+        width: 250px;
+    }
+
+    .login-container img {
+        display: block;
+    }
+
+    .logo-img {
+        width: 130px;
+        height: 160px;
+        display: block;
+    }
+
+    .responsive-footer {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .guayerd-img {
+        width: 112px;
+        height: 29px;
+        display: block;
+    }
+
+    .login-container .btn {
+        width: 250px;
+        height: 38px;
+        border-radius: var(--border--radius);
+    }
+
+    .loginInput {
+        width: 249px !important;
+        border-radius: var(--border--radius);
+    }
+
+    .loginFooter {
+        display: none;
+    }
+}
+
+/*MAP*/
+
+.navbar {
+    padding: 1rem;
+}
+
+#logo-responsive {
+    display: none;
+}
+
+.navbar-toggler {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.navbar-scaloneta {
+    color: #119dd8;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 17px;
+}
+
+.navbar-logout {
+    width: 107px;
+    height: 33px;
+    color: #fff;
+    background-color: #374785;
+    border: #24305e;
+    border-radius: var(--border--radius);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        margin-left: 10rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #logo-desktop {
+        display: none;
+    }
+
+    #logo-responsive {
+        display: inline;
+    }
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: flex-start;
+    height: calc(100vh - 72px);
+}
+
+#select {
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    z-index: 10000000;
+    margin: 2rem;
+}
+
+.map-responsive {
+    height: calc(100vh - 190px) !important;
+    transition: 0.1s;
+}
+/*JUGADORES*/
+.container-xxl h1 {
+    font-size: 36px;
+    text-align: center;
+}
+.containerh1-span {
+    color: #119dd8;
+}
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card {
+    width: 350px;
+    height: 392px;
+    margin: 2rem auto;
+    position: relative;
+}
+.card img {
+    height: 250px;
+    overflow: hidden;
+}
+.card h5 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+.card p {
+    font-size: 13px;
+}
+.dorsal {
+    position: absolute;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+    right: 20px;
+}
